@@ -1,0 +1,90 @@
+{
+  "sections": {
+    "hero-v2": {
+      "type": "hero-v2"
+    },
+    "benefits-v2": {
+      "type": "benefits-v2"
+    },
+    "collection-v2": {
+      "type": "collection-v2"
+    },
+    "promos-v2": {
+      "type": "promos-v2"
+    },
+    "story-v2": {
+      "type": "story-v2"
+    },
+    "values-v2": {
+      "type": "values-v2"
+    },
+    "founder-story": {
+      "type": "founder-story"
+    },
+    "southwest-roots": {
+      "type": "southwest-roots",
+      "blocks": {
+        "region0": {
+          "type": "region",
+          "settings": {
+            "code": "NM",
+            "name": "New Mexico",
+            "quality": "The warmth.",
+            "text": "A sense of home. Sun-washed landscapes, generous tables, and culture that stays with you.",
+            "tone": "clay"
+          }
+        },
+        "region1": {
+          "type": "region",
+          "settings": {
+            "code": "TX",
+            "name": "Texas",
+            "quality": "The energy.",
+            "text": "Big ideas and room to grow. A meeting of people, perspectives, and the place our coffee is roasted.",
+            "tone": "sand"
+          }
+        },
+        "region2": {
+          "type": "region",
+          "settings": {
+            "code": "AZ",
+            "name": "Arizona",
+            "quality": "The tradition.",
+            "text": "Desert beauty and enduring character. A reminder to slow down and appreciate what surrounds us.",
+            "tone": "earth"
+          }
+        },
+        "region3": {
+          "type": "region",
+          "settings": {
+            "code": "CA",
+            "name": "Southern California",
+            "quality": "The possibility.",
+            "text": "Creative spirit, a little polish, and the freedom to see the everyday from a different angle.",
+            "tone": "gold"
+          }
+        }
+      },
+      "block_order": [
+        "region0",
+        "region1",
+        "region2",
+        "region3"
+      ]
+    },
+    "coffee-passion": {
+      "type": "coffee-passion"
+    }
+  },
+  "order": [
+    "hero-v2",
+    "benefits-v2",
+    "collection-v2",
+    "promos-v2",
+    "story-v2",
+    "founder-story",
+    "southwest-roots",
+    "coffee-passion",
+    "values-v2"
+  ]
+}

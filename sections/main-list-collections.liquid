@@ -1,0 +1,7 @@
+<section class="page-intro"><div class="wrap"><span class="eyebrow">Find your daily ritual</span><h1>Our collections.</h1><p>Explore coffee from 75th Avenue.</p></div></section><section class="section wrap"><div class="blog-grid">{% for collection in collections %}<article class="blog-card"><h3><a href="{{ collection.url }}">{{ collection.title | escape }}</a></h3><a class="text-link" href="{{ collection.url }}">Explore collection ↗</a></article>{% else %}<p>Our collections are coming soon.</p>{% endfor %}</div></section>
+{% schema %}
+{
+  "name": "Main List Collections",
+  "settings": []
+}
+{% endschema %}

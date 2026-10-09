@@ -1,0 +1,86 @@
+{
+  "note": "Temporary demo catalog and photography taken from the user-selected Glozin reference. Replace with 75th Avenue products and imagery before launch. No Glozin theme source code was copied.",
+  "products": [
+    {
+      "id": 1,
+      "name": "Sulladjah Ethiopia Abana Coffee",
+      "handle": "sulladjah-ethiopia-abana-coffee",
+      "image": "demo-coffee-1.jpg",
+      "image2": "demo-coffee-1-alt.jpg",
+      "category": "Ethiopia",
+      "price": 25.99,
+      "source": "https://glozin-demo-v2.myshopify.com/products/sulladjah-ethiopia-abana-coffee"
+    },
+    {
+      "id": 2,
+      "name": "Huehuetenango Arabica Coffee",
+      "handle": "huehuetenango-arabica-coffee",
+      "image": "demo-coffee-2.jpg",
+      "image2": "demo-coffee-2-alt.jpg",
+      "category": "Guatemala",
+      "price": 25.99,
+      "source": "https://glozin-demo-v2.myshopify.com/products/huehuetenango-arabica-coffee"
+    },
+    {
+      "id": 3,
+      "name": "Condor Tolima Colombia Coffee",
+      "handle": "condor-tolima-colombia-coffee",
+      "image": "demo-coffee-3.jpg",
+      "image2": "demo-coffee-3-alt.jpg",
+      "category": "Colombia",
+      "price": 25.99,
+      "source": "https://glozin-demo-v2.myshopify.com/products/condor-tolima-colombia-coffee"
+    },
+    {
+      "id": 4,
+      "name": "Ginzo Reserve Ethiopia Coffee",
+      "handle": "ginzo-reserve-ethiopia-coffee",
+      "image": "demo-coffee-4.jpg",
+      "image2": "demo-coffee-4-alt.jpg",
+      "category": "Ethiopia",
+      "price": 25.99,
+      "source": "https://glozin-demo-v2.myshopify.com/products/ginzo-reserve-ethiopia-coffee"
+    },
+    {
+      "id": 5,
+      "name": "Grape Infused Colombia Coffee",
+      "handle": "grape-infused-colombia-coffee",
+      "image": "demo-coffee-5.jpg",
+      "image2": "demo-coffee-5-alt.jpg",
+      "category": "Colombia",
+      "price": 25.99,
+      "source": "https://glozin-demo-v2.myshopify.com/products/grape-infused-colombia-coffee"
+    },
+    {
+      "id": 6,
+      "name": "Strawberry Infused Craft Coffee",
+      "handle": "strawberry-infused-craft-coffee",
+      "image": "demo-coffee-6.jpg",
+      "image2": "demo-coffee-6-alt.jpg",
+      "category": "Colombia",
+      "price": 25.99,
+      "source": "https://glozin-demo-v2.myshopify.com/products/strawberry-infused-craft-coffee"
+    },
+    {
+      "id": 7,
+      "name": "Floresta Espresso Blend Coffee",
+      "handle": "floresta-espresso-blend-coffee",
+      "image": "demo-coffee-7.jpg",
+      "image2": "demo-coffee-7-alt.jpg",
+      "category": "Espresso",
+      "price": 25.99,
+      "source": "https://glozin-demo-v2.myshopify.com/products/floresta-espresso-blend-coffee"
+    },
+    {
+      "id": 8,
+      "name": "Juicy Passion Colombia Coffee",
+      "handle": "juicy-passion-colombia-coffee",
+      "image": "demo-coffee-8.jpg",
+      "image2": "demo-coffee-8-alt.jpg",
+      "category": "Colombia",
+      "price": 25.99,
+      "source": "https://glozin-demo-v2.myshopify.com/products/juicy-passion-colombia-coffee"
+    }
+  ],
+  "font": "Instrument Sans, SIL Open Font License 1.1; license in InstrumentSans-OFL.txt"
+}

@@ -1,0 +1,30 @@
+<section class="hero-v2 wide"><div class="hero-v2-copy"><span class="kicker">Southwestern soul. Everyday ritual.</span><h1>{{ section.settings.heading }}</h1><p>{{ section.settings.description | escape }}</p><a class="button-v2" href="{{ routes.all_products_collection_url }}">Shop coffee <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><div class="hero-note"><span class="tiny-sun">✳</span> Whole beans. Texas roasted. All heart.</div></div><div class="hero-v2-photo">{% if section.settings.image != blank %}{{ section.settings.image | image_url: width: 1800 | image_tag: widths: '600, 900, 1200, 1800', loading: 'eager', fetchpriority: 'high' }}{% else %}<img src="{{ 'demo-coffee-3-alt.jpg' | asset_url }}" width="900" height="900" alt="Glozin demo coffee held in warm, sunlit hands" fetchpriority="high">{% endif %}{% if section.settings.image == blank %}<span class="image-caption">Glozin demo imagery · packaging placeholder</span>{% endif %}</div><div class="hero-bottom"><span>COFFEE &nbsp; / &nbsp; CUSTOMER &nbsp; / &nbsp; CONNECTION</span><a href="#coffee-collection" aria-label="Explore the coffee below">↓</a></div></section>
+{% schema %}
+{
+  "name": "Hero V2",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A taste of the Southwest."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "For slow mornings, bold ideas, and the people you share them with."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hero photography"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero V2"
+    }
+  ]
+}
+{% endschema %}

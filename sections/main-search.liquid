@@ -1,0 +1,7 @@
+<section class="page-intro"><div class="wrap"><span class="eyebrow">Find your way</span><h1>Search the Avenue.</h1><p>Coffee, pages, and stories.</p></div></section><section class="section wrap"><form action="{{ routes.search_url }}" method="get"><div class="email-row"><label class="sr-only" for="Search">Search</label><input id="Search" type="search" name="q" value="{{ search.terms | escape }}" placeholder="Search coffee, stories, and more"><button>Search ↗</button></div></form>{% if search.performed %}{% paginate search.results by 12 %}<p>{{ search.results_count }} results</p><div class="blog-grid">{% for item in search.results %}<article class="blog-card"><h3><a href="{{ item.url }}">{{ item.title | escape }}</a></h3><p>{{ item.content | strip_html | truncatewords: 25 }}</p></article>{% else %}<p>No results. Try another search.</p>{% endfor %}</div>{{ paginate | default_pagination }}{% endpaginate %}{% endif %}</section>
+{% schema %}
+{
+  "name": "Main Search",
+  "settings": []
+}
+{% endschema %}

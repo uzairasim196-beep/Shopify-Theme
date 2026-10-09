@@ -1,0 +1,106 @@
+<section class="region-section wide section-v2" id="southwest"><div class="region-heading"><div><span class="kicker">More than a place on a map</span><h2>Four places.<br>One Southwestern soul.</h2></div><p>Our inspiration is a feeling, carried from one place to the next. These are the places that shape it.</p></div><div class="region-grid">{% for block in section.blocks %}<article class="region-card tone-{{ block.settings.tone }}" {{ block.shopify_attributes }}><div class="region-top"><span>{{ block.settings.name | escape }}</span><span aria-hidden="true">↗</span></div><span class="region-code" aria-hidden="true">{{ block.settings.code | escape }}</span><h3>{{ block.settings.quality | escape }}</h3><p>{{ block.settings.text | escape }}</p></article>{% endfor %}</div><p class="region-footnote">Southwestern inspiration. Coffee roasted in Texas.</p></section>
+{% schema %}
+{
+  "name": "Southwest Roots",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Southwest Roots",
+      "blocks": [
+        {
+          "type": "region",
+          "settings": {
+            "code": "NM",
+            "name": "New Mexico",
+            "quality": "The warmth.",
+            "text": "A sense of home. Sun-washed landscapes, generous tables, and culture that stays with you.",
+            "tone": "clay"
+          }
+        },
+        {
+          "type": "region",
+          "settings": {
+            "code": "TX",
+            "name": "Texas",
+            "quality": "The energy.",
+            "text": "Big ideas and room to grow. A meeting of people, perspectives, and the place our coffee is roasted.",
+            "tone": "sand"
+          }
+        },
+        {
+          "type": "region",
+          "settings": {
+            "code": "AZ",
+            "name": "Arizona",
+            "quality": "The tradition.",
+            "text": "Desert beauty and enduring character. A reminder to slow down and appreciate what surrounds us.",
+            "tone": "earth"
+          }
+        },
+        {
+          "type": "region",
+          "settings": {
+            "code": "CA",
+            "name": "Southern California",
+            "quality": "The possibility.",
+            "text": "Creative spirit, a little polish, and the freedom to see the everyday from a different angle.",
+            "tone": "gold"
+          }
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "region",
+      "name": "Region",
+      "settings": [
+        {
+          "type": "text",
+          "id": "code",
+          "label": "State abbreviation"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Region name"
+        },
+        {
+          "type": "text",
+          "id": "quality",
+          "label": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description"
+        },
+        {
+          "type": "select",
+          "id": "tone",
+          "label": "Card color",
+          "options": [
+            {
+              "value": "clay",
+              "label": "Clay"
+            },
+            {
+              "value": "sand",
+              "label": "Sand"
+            },
+            {
+              "value": "earth",
+              "label": "Earth"
+            },
+            {
+              "value": "gold",
+              "label": "Gold"
+            }
+          ],
+          "default": "clay"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

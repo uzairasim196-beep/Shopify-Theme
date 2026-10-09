@@ -1,0 +1,25 @@
+<section class="passion-section wide" id="coffee-passion"><div class="passion-heading"><span class="kicker">Why coffee, always</span><span class="passion-sun" aria-hidden="true">✳</span><h2>{{ section.settings.heading }}</h2><p>{{ section.settings.description | escape }}</p></div><div class="ritual-grid"><article class="ritual-card"><span class="ritual-number">01</span><h3>The morning spark.</h3><p>For the first idea of the day, the work ahead, and the quiet confidence to begin.</p></article><article class="ritual-card"><span class="ritual-number">02</span><h3>The pause in between.</h3><p>A moment to slow down. To reflect, reset, and find a little pleasure in the everyday.</p></article><article class="ritual-card"><span class="ritual-number">03</span><h3>The shared table.</h3><p>A conversation with a friend. A hello to a stranger. Something good, made better together.</p></article></div><div class="passion-bottom"><p>Through trusted roasting partners in Texas, we’re putting that passion into a cup that feels like home.</p><a class="button-v2 white-v2" href="{{ routes.all_products_collection_url }}">Find your next cup <span>→</span></a></div></section>
+{% schema %}
+{
+  "name": "Coffee Passion",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "More than what\u2019s in the cup. It\u2019s what happens around it."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "For us, coffee is an art form and a shared language. Complex, layered, full of character \u2014 just like the lives we bring to the table."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Coffee Passion"
+    }
+  ]
+}
+{% endschema %}

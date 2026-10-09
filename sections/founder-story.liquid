@@ -1,0 +1,37 @@
+<section class="founder-section wide" id="founder-story"><div class="founder-label"><span class="kicker">The heart behind the Avenue</span><h2>{{ section.settings.heading }}</h2><div class="founder-seal"><img src="{{ 'brand-logo.jpg' | asset_url }}" width="106" height="106" alt="75th Avenue Coffee logo" loading="lazy"><span>Built with purpose.<br>Rooted in a place.</span></div><span class="founder-watermark" aria-hidden="true">75</span></div><div class="founder-letter"><span class="letter-rule" aria-hidden="true"></span><p class="letter-lead">{{ section.settings.lead | escape }}</p><p>{{ section.settings.body_one | escape }}</p><p>{{ section.settings.body_two | escape }}</p><div class="letter-signoff"><span>From the heart of 75th Avenue</span><small>COFFEE / CUSTOMER / CONNECTION</small></div></div></section>
+{% schema %}
+{
+  "name": "Founder Story",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A full life. A wholehearted pursuit."
+    },
+    {
+      "type": "textarea",
+      "id": "lead",
+      "label": "Opening paragraph",
+      "default": "75th Avenue was born from a love of the Southwest \u2014 and a belief that the things we care about are worth making time for."
+    },
+    {
+      "type": "textarea",
+      "id": "body_one",
+      "label": "Founder journey",
+      "default": "The journey began between full-time work, full-time study, and the everyday work of building something from the ground up. Coffee was part of it all: a morning spark, a companion to late-night ideas, and a reason to keep going."
+    },
+    {
+      "type": "textarea",
+      "id": "body_two",
+      "label": "Brand inspiration",
+      "default": "This brand brings that feeling home. A little of New Mexico\u2019s warmth. A little of Texas\u2019s energy. A tribute to the places, people, and possibilities that make the Southwest unlike anywhere else."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Founder Story"
+    }
+  ]
+}
+{% endschema %}

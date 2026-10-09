@@ -1,0 +1,7 @@
+<section class="newsletter-v2" id="newsletter"><div class="wide newsletter-v2-grid"><div><span class="kicker">Letters from the Avenue</span><h2>Good things.<br>Freshly brewed.</h2><p>Be first to hear about new coffee, pop-ups,<br>and stories from around the Southwest.</p></div><div>{% form 'customer', id: 'NewsletterForm' %}<input type="hidden" name="contact[tags]" value="newsletter"><label for="NewsletterEmail" class="sr-only">Email address</label><div class="signup-row"><input id="NewsletterEmail" name="contact[email]" type="email" autocomplete="email" required placeholder="Your email address"><button type="submit" aria-label="Sign up"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>{% if form.posted_successfully? %}<p role="status">You’re on the Avenue. Thanks for joining us.</p>{% endif %}{{ form.errors | default_errors }}{% endform %}<small>By signing up, you agree to receive marketing emails.<br>Unsubscribe whenever you like.</small></div></div></section>
+{% schema %}
+{
+  "name": "Newsletter",
+  "settings": []
+}
+{% endschema %}

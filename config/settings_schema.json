@@ -1,0 +1,50 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "75th Avenue",
+    "theme_version": "3.0.0",
+    "theme_author": "75th Avenue Coffee",
+    "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
+    "theme_support_url": "https://help.shopify.com"
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo (optional replacement)"
+      },
+      {
+        "type": "color",
+        "id": "color_cream",
+        "label": "Warm ivory",
+        "default": "#faf4dd"
+      },
+      {
+        "type": "color",
+        "id": "color_ink",
+        "label": "Espresso",
+        "default": "#541f0b"
+      },
+      {
+        "type": "color",
+        "id": "color_rust",
+        "label": "Burnt orange",
+        "default": "#cc5919"
+      },
+      {
+        "type": "color",
+        "id": "color_gold",
+        "label": "Desert gold",
+        "default": "#fca92c"
+      },
+      {
+        "type": "color",
+        "id": "color_taupe",
+        "label": "Warm taupe",
+        "default": "#7f553a"
+      }
+    ]
+  }
+]

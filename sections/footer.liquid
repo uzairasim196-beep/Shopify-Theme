@@ -1,0 +1,18 @@
+<footer class="footer-v3"><div class="footer-inner"><div class="footer-invitation"><div><span class="kicker">There’s a place for you here</span><h2>Pull up a chair.<br>Stay for a good cup.</h2></div><a class="button-v2 footer-shop" href="{{ routes.all_products_collection_url }}">Explore the coffee <span>↗</span></a></div><div class="footer-detail-grid"><div class="footer-brand-story"><a class="footer-brandmark" href="{{ routes.root_url }}" aria-label="75th Avenue Coffee home"><img src="{{ 'brand-logo.jpg' | asset_url }}" alt="75th Avenue Coffee" width="92" height="92" loading="lazy"><span>75th Avenue<small>A TASTE OF THE SOUTHWEST</small></span></a><p>Southwestern roots. A welcoming spirit.<br>Whole-bean coffee for wherever<br>your own avenue takes you.</p><div class="footer-pillars"><span>Coffee</span><i>·</i><span>Customer</span><i>·</i><span>Connection</span></div></div><div class="footer-link-column"><h3>Find your coffee</h3><a href="{{ routes.all_products_collection_url }}">Shop all coffee ↗</a><button data-open-quiz>Discover your ritual</button><button data-open-saved>Saved coffees</button></div><div class="footer-link-column"><h3>Behind the Avenue</h3><a href="{{ routes.root_url }}#our-story">Our Southwestern story</a><a href="{{ routes.root_url }}#founder-story">The founder’s journey</a><a href="{{ routes.root_url }}#coffee-passion">Why we love coffee</a></div><div class="footer-link-column footer-community"><h3>Keep good company</h3><p>New coffee, future pop-ups,<br>and notes from the Southwest.</p><a class="footer-news-link" href="#newsletter">Join the Avenue <span>↗</span></a>{% if section.settings.instagram != blank %}<a href="{{ section.settings.instagram }}">Instagram ↗</a>{% endif %}{% if section.settings.email != blank %}<a href="mailto:{{ section.settings.email | escape }}">Say hello ↗</a>{% endif %}</div></div><div class="footer-territory"><span>INSPIRED BY</span><p>New Mexico <i>✳</i> Texas <i>✳</i> Arizona <i>✳</i> Southern California</p><span>ROASTED IN TEXAS</span></div><div class="footer-bigtype" aria-hidden="true">75th Avenue<span>✳</span></div><div class="footer-legal"><span>© {{ 'now' | date: '%Y' }} 75th Avenue Coffee.</span><span>A little Southwest. Wherever you are.</span><div>{% for policy in shop.policies %}{% if policy != blank %}<a href="{{ policy.url }}">{{ policy.title | escape }}</a> {% endif %}{% endfor %}</div><a href="#MainContent" class="footer-top-link">Back to top ↑</a></div></div></footer>
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "url",
+      "id": "instagram",
+      "label": "Instagram URL (optional)"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Contact email (optional)"
+    }
+  ]
+}
+{% endschema %}
